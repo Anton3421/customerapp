@@ -16,7 +16,7 @@ export default function Customerlist() {
   const fetchCustomers = () => {
     fetch("http://traineeapp.azurewebsites.net/api/customers")
       .then((response) => response.json())
-      .then((responseData) => setCustomers(responseData.links.customers))
+      .then((responseData) => setCustomers(responseData.content))
       .catch((err) => console.error(err));
   };
 
