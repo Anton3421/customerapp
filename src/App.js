@@ -29,17 +29,21 @@ function App() {
         <Tabs 
             value={value} 
             onChange={handleChange}
-            textColor="white"
             TabIndicatorProps={{ style: { backgroundColor: 'white '}}}>
                  
             
             <Tab
               label="Customers"
-              value="one"/>
-              
+              value="one"
+              sx={{
+                color: 'white',
+              }}/>
             <Tab
               label="Trainings"
-              value="two"/>
+              value="two"
+              sx={{
+                 color: 'white',
+              }}/>
 
 
         </Tabs>
