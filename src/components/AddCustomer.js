@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog'
-import { DialogTitle } from '@mui/material'
+import Dialog from '@mui/material/Dialog';
+import { DialogTitle } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
@@ -11,6 +11,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 
 export default function AddCustomer({ addCustomer }) {
     const [open, setOpen] = React.useState(false);
+   
     const [customer, setCustomer] = React.useState({
         firstname: '',
         lastname: '',
